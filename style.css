@@ -11,7 +11,7 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
-.container {
+main {
   background-color: hsl(212, 45%, 89%);
   height: 100vh;
   width: 100vw;
@@ -21,16 +21,16 @@ body {
 }
 
 .card {
-  width: 257px;
+  width: 381px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 1rem;
-  padding: 0.8rem;
+  padding: 1rem;
 }
 
 .card-img {
   border-radius: 0.8rem;
   overflow: hidden;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
 }
 
 .qr-code-img {
@@ -40,7 +40,7 @@ body {
 .card-body {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1rem;
   padding: 0.6rem;
   text-align: center;
   font-size: 15px;
@@ -54,4 +54,15 @@ body {
 .card-body p {
   color: hsl(220, 15%, 55%);
   font-weight: 400;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 337px;
+  }
+
+  .card-body {
+    font-size: 13px;
+  }
 }
